@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWX Visual — Video Editor & Filmmaker</title>
+    <meta name="description"
+        content="Portfolio of AWX Visual, a professional video editor and filmmaker specializing in cinematic storytelling, color grading, and creative content production.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@600;700;800;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Cursor glow effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav__container">
+            <a href="#hero" class="nav__logo">
+                <img src="assets/images/logo-full.png" alt="AWX Logo" class="nav__logo-img">
+                <span class="nav__logo-tag">VISUAL</span>
+            </a>
+            <ul class="nav__links">
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#work" class="nav__link">Work</a></li>
+                <li><a href="#skills" class="nav__link">Skills</a></li>
+                <li><a href="#contact" class="nav__link nav__link--cta">Let's Talk</a></li>
+            </ul>
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-menu__links">
+            <li><a href="#about" class="mobile-menu__link">About</a></li>
+            <li><a href="#work" class="mobile-menu__link">Work</a></li>
+            <li><a href="#skills" class="mobile-menu__link">Skills</a></li>
+            <li><a href="#contact" class="mobile-menu__link">Let's Talk</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero__bg-grid"></div>
+        <div class="hero__3d-model">
+            <iframe title="Sony Camera 4K" src="https://sketchfab.com/models/f7c8d7831aa24f979ff531934c8439de/embed?autostart=1&transparent=1&ui_controls=0&ui_infos=0&ui_watermark=0&ui_watermark_link=0&ui_stop=0&auto_spin=0.05&scrollwheel=0" frameborder="0" allow="autoplay; fullscreen; xr-spatial-tracking" execution-while-out-of-viewport execution-while-not-rendered web-share></iframe>
+        </div>
+        <div class="hero__particles" id="particles"></div>
+        <div class="hero__content">
+            <div class="hero__badge">
+                <span class="hero__badge-dot"></span>
+                Available for Freelance
+            </div>
+            <h1 class="hero__title">
+                <span class="hero__title-line">I craft</span>
+                <span class="hero__title-line hero__title-line--accent">cinematic</span>
+                <span class="hero__title-line">stories.</span>
+            </h1>
+            <p class="hero__subtitle">Video Editor & Filmmaker based in Malaysia, transforming raw footage into
+                compelling visual narratives through creative editing and color grading.</p>
+            <div class="hero__actions">
+                <a href="#work" class="btn btn--primary">
+                    <span>View My Work</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+                <a href="#showreel" class="btn btn--ghost">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="5 3 19 12 5 21 5 3" />
+                    </svg>
+                    <span>Showreel</span>
+                </a>
+            </div>
+            <div class="hero__stats">
+                <div class="hero__stat">
+                    <span class="hero__stat-number" data-count="50">0</span><span class="accent">+</span>
+                    <span class="hero__stat-label">Projects</span>
+                </div>
+                <div class="hero__stat-divider"></div>
+                <div class="hero__stat">
+                    <span class="hero__stat-number" data-count="3">0</span><span class="accent">+</span>
+                    <span class="hero__stat-label">Years Experience</span>
+                </div>
+                <div class="hero__stat-divider"></div>
+                <div class="hero__stat">
+                    <span class="hero__stat-number" data-count="30">0</span><span class="accent">+</span>
+                    <span class="hero__stat-label">Happy Clients</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero__scroll-indicator">
+            <span>Scroll</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">01 — About</span>
+                <h2 class="section-title">The <span class="accent">person</span> behind the lens</h2>
+            </div>
+            <div class="about__grid">
+                <div class="about__image-wrapper">
+                    <div class="about__image-frame">
+                        <img src="assets/images/profile.jpg" alt="AWX Visual - Video Editor" class="about__image"
+                            loading="lazy">
+                        <div class="about__image-overlay"></div>
+                    </div>
+                    <div class="about__image-decoration"></div>
+                </div>
+                <div class="about__content">
+                    <h3 class="about__name">AWX Visual</h3>
+                    <p class="about__role">Video Editor & Filmmaker</p>
+                    <p class="about__bio">
+                        I'm a passionate video editor and filmmaker based in Kelantan, Malaysia, with a keen eye for
+                        storytelling through visual media. My journey began with a love for cinema and has evolved into
+                        a professional career crafting compelling video content.
+                    </p>
+                    <p class="about__bio">
+                        Specializing in video editing, color grading, and cinematography, I bring stories to life using
+                        industry-standard tools like DaVinci Resolve, Adobe Premiere Pro, and After Effects. From short
+                        films and documentaries to commercial content and social media videos, I approach every project
+                        with creativity and dedication.
+                    </p>
+                    <div class="about__details">
+                        <div class="about__detail">
+                            <span class="about__detail-label">Location</span>
+                            <span class="about__detail-value">Kelantan, Malaysia</span>
+                        </div>
+                        <div class="about__detail">
+                            <span class="about__detail-label">Specialty</span>
+                            <span class="about__detail-value">Video Editing & Color Grading</span>
+                        </div>
+                        <div class="about__detail">
+                            <span class="about__detail-label">Experience</span>
+                            <span class="about__detail-value">3+ Years</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section (Unified) -->
+    <section class="portfolio-section" id="work">
+        <div class="container">
+            <div class="section-header section-header--center">
+                <span class="section-label">02 — Portfolio</span>
+                <h2 class="section-title">My <span class="accent">work</span></h2>
+                <p class="section-description" style="margin: 1rem auto 0;">From cinematic films and documentaries to short-form viral content — here's what I've crafted.</p>
+            </div>
+
+            <!-- Category Tabs -->
+            <div class="work-tabs" id="workTabs">
+                <button class="work-tab work-tab--active" data-filter="all">All</button>
+                <button class="work-tab" data-filter="cinematic">Cinematic</button>
+                <button class="work-tab" data-filter="short-form">Short Form</button>
+            </div>
+
+            <!-- Work Grid -->
+            <div class="work-grid" id="workGrid">
+
+                <!-- CINEMATIC: Putar -->
+                <div class="work-item" data-category="cinematic">
+                    <div class="video-card video-card--landscape">
+                        <div class="video-card__media">
+                            <iframe src="https://www.youtube.com/embed/ClRQkhqDQBc" title="Putar Short Film"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="video-card__info">
+                            <span class="video-card__badge">Short Horror Film</span>
+                            <h3 class="video-card__title">Putar</h3>
+                            <p class="video-card__desc">A tense, atmospheric short horror film featuring psychological
+                                suspense and moody low-light color grading.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CINEMATIC: Delivery -->
+                <div class="work-item" data-category="cinematic">
+                    <div class="video-card video-card--landscape">
+                        <div class="video-card__media">
+                            <iframe src="https://www.youtube.com/embed/EWJ9qZjwFkE" title="Delivery Short Film"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="video-card__info">
+                            <span class="video-card__badge">Cinematic Narrative</span>
+                            <h3 class="video-card__title">Delivery</h3>
+                            <p class="video-card__desc">Cinematic short film exploring themes of connection and journey
+                                through dim city alleyways.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CINEMATIC: PEKAYATIM TikTok -->
+                <div class="work-item" data-category="cinematic">
+                    <div class="work-item__embed">
+                        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@awx_visual/video/7528496875758980359" data-video-id="7528496875758980359" data-theme="dark" style="max-width: 100%; min-width: 100%; margin: 0; border: none;" > <section> <a target="_blank" title="@awx_visual" href="https://www.tiktok.com/@awx_visual?refer=embed">@awx_visual</a> &#34;Di balik senyuman mereka, tersimpan kisah yang penuh pengorbanan dan harapan.&#34; @ukekwa.kelantan 📍Lokasi: PEKAYATIM, Kelantan 🎥 Sebuah produksi AWX Production  <a title="KelantanNegeriBerkebajikan" target="_blank" href="https://www.tiktok.com/tag/KelantanNegeriBerkebajikan?refer=embed">#KelantanNegeriBerkebajikan</a> <a title="KelantankuCakna" target="_blank" href="https://www.tiktok.com/tag/KelantankuCakna?refer=embed">#KelantankuCakna</a> <a title="UKeKWa" target="_blank" href="https://www.tiktok.com/tag/UKeKWa?refer=embed">#UKeKWa</a> <a title="PMBI" target="_blank" href="https://www.tiktok.com/tag/PMBI?refer=embed">#PMBI</a> <a title="NegeriBerkebajikan" target="_blank" href="https://www.tiktok.com/tag/NegeriBerkebajikan?refer=embed">#NegeriBerkebajikan</a> <a title="KelantanPrihatin" target="_blank" href="https://www.tiktok.com/tag/KelantanPrihatin?refer=embed">#KelantanPrihatin</a> <a title="PEKAYATIM" target="_blank" href="https://www.tiktok.com/tag/PEKAYATIM?refer=embed">#PEKAYATIM</a> <a title="AnakYatim" target="_blank" href="https://www.tiktok.com/tag/AnakYatim?refer=embed">#AnakYatim</a> <a title="Kebajikan" target="_blank" href="https://www.tiktok.com/tag/Kebajikan?refer=embed">#Kebajikan</a> <a title="KasihSayang" target="_blank" href="https://www.tiktok.com/tag/KasihSayang?refer=embed">#KasihSayang</a> <a title="DocumentaryMalaysia" target="_blank" href="https://www.tiktok.com/tag/DocumentaryMalaysia?refer=embed">#DocumentaryMalaysia</a> <a title="VideoInterview" target="_blank" href="https://www.tiktok.com/tag/VideoInterview?refer=embed">#VideoInterview</a> <a title="Sedekah" target="_blank" href="https://www.tiktok.com/tag/Sedekah?refer=embed">#Sedekah</a> <a title="KisahBenar" target="_blank" href="https://www.tiktok.com/tag/KisahBenar?refer=embed">#KisahBenar</a> <a target="_blank" title="♬ original sound  - awx" href="https://www.tiktok.com/music/original-sound-awx-7528496966808947457?refer=embed">♬ original sound  - awx</a> </section> </blockquote>
+                    </div>
+                </div>
+
+                <!-- CINEMATIC: Instagram Reel -->
+                <div class="work-item" data-category="cinematic">
+                    <div class="work-item__embed">
+                        <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DbdTrUMpGwc/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#000; border:0; border-radius:12px; box-shadow:none; margin: 0; max-width:100%; min-width:100%; padding:0; width:100%;"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DbdTrUMpGwc/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/DbdTrUMpGwc/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by MHS UTeM (@mhsutem)</a></p></div></blockquote>
+                        <script async src="//www.instagram.com/embed.js"></script>
+                    </div>
+                </div>
+
+                <!-- SHORT FORM: AlBanna 1 -->
+                <div class="work-item" data-category="short-form">
+                    <div class="work-item__embed">
+                        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@albannaacademy/video/7626698606929595666" data-video-id="7626698606929595666" data-theme="dark" style="max-width: 100%; min-width: 100%; margin: 0; border: none;" > <section> <a target="_blank" title="@albannaacademy" href="https://www.tiktok.com/@albannaacademy?refer=embed">@albannaacademy</a> PENGUMUMAN!! PENGUMUMAN!! Tadabur 30 tengah buat harga promosi cepat tekan beg kuning sekarang! <a title="tadabur30" target="_blank" href="https://www.tiktok.com/tag/tadabur30?refer=embed">#Tadabur30</a>  <a title="albannaacademy" target="_blank" href="https://www.tiktok.com/tag/albannaacademy?refer=embed">#albannaacademy</a> <a target="_blank" title="♬ bunyi asal  - AlBanna Academy" href="https://www.tiktok.com/music/bunyi-asal-AlBanna-Academy-7626698639352941319?refer=embed">♬ bunyi asal  - AlBanna Academy</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+                    </div>
+                </div>
+
+                <!-- SHORT FORM: AlBanna 2 -->
+                <div class="work-item" data-category="short-form">
+                    <div class="work-item__embed">
+                        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@albannaacademy/video/7634839168614436104" data-video-id="7634839168614436104" data-theme="dark" style="max-width: 100%; min-width: 100%; margin: 0; border: none;" > <section> <a target="_blank" title="@albannaacademy" href="https://www.tiktok.com/@albannaacademy?refer=embed">@albannaacademy</a> Dimanakah Al-Quran disaat kita tiada lagi? <a title="albannaacademy" target="_blank" href="https://www.tiktok.com/tag/albannaacademy?refer=embed">#albannaacademy</a> <a title="tadabur30" target="_blank" href="https://www.tiktok.com/tag/tadabur30?refer=embed">#tadabur30</a> <a target="_blank" title="♬ bunyi asal  - AlBanna Academy" href="https://www.tiktok.com/music/bunyi-asal-AlBanna-Academy-7634839247811267349?refer=embed">♬ bunyi asal  - AlBanna Academy</a> </section> </blockquote>
+                    </div>
+                </div>
+
+                <!-- SHORT FORM: AlBanna 3 -->
+                <div class="work-item" data-category="short-form">
+                    <div class="work-item__embed">
+                        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@albannaacademy/video/7632904590102465799" data-video-id="7632904590102465799" data-theme="dark" style="max-width: 100%; min-width: 100%; margin: 0; border: none;" > <section> <a target="_blank" title="@albannaacademy" href="https://www.tiktok.com/@albannaacademy?refer=embed">@albannaacademy</a> Faham Al-Quran Dengan Buku Ni. <a title="albannaacademy" target="_blank" href="https://www.tiktok.com/tag/albannaacademy?refer=embed">#albannaacademy</a> <a title="tadabur30" target="_blank" href="https://www.tiktok.com/tag/tadabur30?refer=embed">#tadabur30</a> <a target="_blank" title="♬ bunyi asal  - AlBanna Academy" href="https://www.tiktok.com/music/bunyi-asal-AlBanna-Academy-7632904657194470162?refer=embed">♬ bunyi asal  - AlBanna Academy</a> </section> </blockquote>
+                    </div>
+                </div>
+
+                <!-- SHORT FORM: AlBanna 4 -->
+                <div class="work-item" data-category="short-form">
+                    <div class="work-item__embed">
+                        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@albannaacademy/video/7633714585073224978" data-video-id="7633714585073224978" data-theme="dark" style="max-width: 100%; min-width: 100%; margin: 0; border: none;" > <section> <a target="_blank" title="@albannaacademy" href="https://www.tiktok.com/@albannaacademy?refer=embed">@albannaacademy</a> Jin Panas Dengar Al-Quran. <a title="albannaacademy" target="_blank" href="https://www.tiktok.com/tag/albannaacademy?refer=embed">#albannaacademy</a> <a title="tadabur30" target="_blank" href="https://www.tiktok.com/tag/tadabur30?refer=embed">#tadabur30</a> <a target="_blank" title="♬ original sound  - AlBanna Academy" href="https://www.tiktok.com/music/original-sound-AlBanna-Academy-7633714660662905607?refer=embed">♬ original sound  - AlBanna Academy</a> </section> </blockquote>
+                    </div>
+                </div>
+
+                <!-- SHORT FORM: BeDaie -->
+                <div class="work-item" data-category="short-form">
+                    <div class="work-item__embed">
+                        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@bedaie.hq/video/7603282730775809300" data-video-id="7603282730775809300" data-theme="dark" style="max-width: 100%; min-width: 100%; margin: 0; border: none;" > <section> <a target="_blank" title="@bedaie.hq" href="https://www.tiktok.com/@bedaie.hq?refer=embed">@bedaie.hq</a> <p>Dapatkan sekarang baku panduan qada solat. Buku ini dikarang khas untuk sesiapa yang ingin mengqada solat mereka yang lepas dengan panduan detail seperti cara qada solat yang terlepas, qada fardu ketika jemaah, sunat² qada solat dan sebagainya. Dapatkan SEKARANG! di bag kuning sementara stock masih ada. #bedaie1rumah1daie #bedaie #dakwahtiktok #agamaislam #ilmuwajibbelajar</p> <a target="_blank" title="♬ original sound  - BeDaie Ilmu Agama" href="https://www.tiktok.com/music/original-sound-BeDaie-Ilmu-Agama-7603282995110906645?refer=embed">♬ original sound  - BeDaie Ilmu Agama</a> </section> </blockquote>
+                    </div>
+                </div>
+
+                <!-- SHORT FORM: Kecekapan Tenaga -->
+                <div class="work-item" data-category="short-form">
+                    <div class="work-item__embed">
+                        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@awx_visual/video/7299562790220614919" data-video-id="7299562790220614919" data-theme="dark" style="max-width: 100%; min-width: 100%; margin: 0; border: none;" > <section> <a target="_blank" title="@awx_visual" href="https://www.tiktok.com/@awx_visual?refer=embed">@awx_visual</a> Kecekapan Tenaga 💡 <a title="polyccxtnb" target="_blank" href="https://www.tiktok.com/tag/polyccxtnb?refer=embed">#polyccxtnb</a>  <a title="cekaptenaga" target="_blank" href="https://www.tiktok.com/tag/cekaptenaga?refer=embed">#cekaptenaga</a> <a title="psmza" target="_blank" href="https://www.tiktok.com/tag/psmza?refer=embed">#psmza</a> <a target="_blank" title="♬ original sound - Mr.Hdjd - awx" href="https://www.tiktok.com/music/original-sound-MrHdjd-7299562847573428994?refer=embed">♬ original sound - Mr.Hdjd - awx</a> </section> </blockquote>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header section-header--center">
+                <span class="section-label">04 — Skills & Tools</span>
+                <h2 class="section-title">What I <span class="accent">bring</span> to the table</h2>
+            </div>
+
+            <div class="skills__grid">
+                <div class="skills__card">
+                    <div class="skills__card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2" />
+                            <line x1="8" y1="21" x2="16" y2="21" />
+                            <line x1="12" y1="17" x2="12" y2="21" />
+                            <polygon points="10 8 14 10.5 10 13" fill="currentColor" stroke="none" />
+                        </svg>
+                    </div>
+                    <h3 class="skills__card-title">Video Editing</h3>
+                    <p class="skills__card-desc">Professional non-linear editing with precise pacing, transitions, and
+                        narrative structure.</p>
+                </div>
+
+                <div class="skills__card">
+                    <div class="skills__card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10" />
+                            <circle cx="12" cy="12" r="6" />
+                            <circle cx="12" cy="12" r="2" />
+                            <line x1="12" y1="2" x2="12" y2="6" />
+                            <line x1="12" y1="18" x2="12" y2="22" />
+                            <line x1="2" y1="12" x2="6" y2="12" />
+                            <line x1="18" y1="12" x2="22" y2="12" />
+                        </svg>
+                    </div>
+                    <h3 class="skills__card-title">Color Grading</h3>
+                    <p class="skills__card-desc">Cinematic color correction and grading to set the mood and enhance
+                        visual storytelling.</p>
+                </div>
+
+                <div class="skills__card">
+                    <div class="skills__card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z" />
+                            <circle cx="12" cy="13" r="4" />
+                        </svg>
+                    </div>
+                    <h3 class="skills__card-title">Cinematography</h3>
+                    <p class="skills__card-desc">Capturing stunning visuals with thoughtful composition, lighting, and
+                        camera movement.</p>
+                </div>
+
+                <div class="skills__card">
+                    <div class="skills__card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                            <path d="M2 17l10 5 10-5" />
+                            <path d="M2 12l10 5 10-5" />
+                        </svg>
+                    </div>
+                    <h3 class="skills__card-title">Motion Graphics</h3>
+                    <p class="skills__card-desc">Creating dynamic animations, titles, and visual effects that elevate
+                        the production value.</p>
+                </div>
+
+                <div class="skills__card">
+                    <div class="skills__card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M9 18V5l12-2v13" />
+                            <circle cx="6" cy="18" r="3" />
+                            <circle cx="18" cy="16" r="3" />
+                        </svg>
+                    </div>
+                    <h3 class="skills__card-title">Sound Design</h3>
+                    <p class="skills__card-desc">Audio mixing, sound effects, and music selection to create immersive
+                        soundscapes.</p>
+                </div>
+
+                <div class="skills__card">
+                    <div class="skills__card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path
+                                d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="skills__card-title">Content Creation</h3>
+                    <p class="skills__card-desc">End-to-end content production for social media platforms including
+                        TikTok and YouTube.</p>
+                </div>
+            </div>
+
+            <!-- Software Tools -->
+            <div class="tools">
+                <h3 class="tools__title">Software & Tools</h3>
+                <div class="tools__grid">
+                    <div class="tools__item">
+                        <div class="tools__item-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                            </svg>
+                        </div>
+                        <span class="tools__item-name">DaVinci Resolve</span>
+                        <div class="tools__item-level">
+                            <div class="tools__item-bar" style="--level: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="tools__item">
+                        <div class="tools__item-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                            </svg>
+                        </div>
+                        <span class="tools__item-name">Adobe Premiere Pro</span>
+                        <div class="tools__item-level">
+                            <div class="tools__item-bar" style="--level: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="tools__item">
+                        <div class="tools__item-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                            </svg>
+                        </div>
+                        <span class="tools__item-name">After Effects</span>
+                        <div class="tools__item-level">
+                            <div class="tools__item-bar" style="--level: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="tools__item">
+                        <div class="tools__item-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                            </svg>
+                        </div>
+                        <span class="tools__item-name">CapCut</span>
+                        <div class="tools__item-level">
+                            <div class="tools__item-bar" style="--level: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="tools__item">
+                        <div class="tools__item-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                            </svg>
+                        </div>
+                        <span class="tools__item-name">Adobe Photoshop</span>
+                        <div class="tools__item-level">
+                            <div class="tools__item-bar" style="--level: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="tools__item">
+                        <div class="tools__item-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                            </svg>
+                        </div>
+                        <span class="tools__item-name">Sony Alpha Camera</span>
+                        <div class="tools__item-level">
+                            <div class="tools__item-bar" style="--level: 88%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workspace Section -->
+    <section class="workspace">
+        <div class="container">
+            <div class="workspace__content">
+                <div class="workspace__images">
+                    <div class="workspace__image workspace__image--main">
+                        <img src="assets/images/workspace.jpg" alt="Video editing workspace" loading="lazy">
+                    </div>
+                    <div class="workspace__image workspace__image--secondary">
+                        <img src="assets/images/coloring.jpg" alt="Color grading in DaVinci Resolve" loading="lazy">
+                    </div>
+                </div>
+                <div class="workspace__text">
+                    <h3 class="workspace__title">My Creative <span class="accent">Space</span></h3>
+                    <p class="workspace__desc">Every great story is crafted in a space designed for creativity. My
+                        editing suite is equipped with professional monitors for accurate color representation, powered
+                        by industry-standard software for delivering cinema-quality results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof / TikTok Section -->
+    <section class="social" id="social">
+        <div class="container">
+            <div class="section-header section-header--center">
+                <span class="section-label">05 — Social Content</span>
+                <h2 class="section-title">Follow my <span class="accent">journey</span></h2>
+            </div>
+            <div class="social__grid">
+                <a href="https://vt.tiktok.com/ZSAogELba/" target="_blank" rel="noopener" class="social__card">
+                    <div class="social__card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V9.16a8.16 8.16 0 004.76 1.51V7.22a4.83 4.83 0 01-1-.53z" />
+                        </svg>
+                    </div>
+                    <span class="social__card-platform">TikTok</span>
+                    <span class="social__card-handle">@awx_visual</span>
+                    <span class="social__card-cta">Follow →</span>
+                </a>
+                <a href="https://www.youtube.com/@shizfaz1708" target="_blank" rel="noopener" class="social__card">
+                    <div class="social__card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                        </svg>
+                    </div>
+                    <span class="social__card-platform">YouTube</span>
+                    <span class="social__card-handle">@shizfaz1708</span>
+                    <span class="social__card-cta">Subscribe →</span>
+                </a>
+                <a href="https://www.instagram.com/awawo_48" target="_blank" rel="noopener" class="social__card">
+                    <div class="social__card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                        </svg>
+                    </div>
+                    <span class="social__card-platform">Instagram</span>
+                    <span class="social__card-handle">@awawo_48</span>
+                    <span class="social__card-cta">Follow →</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact__grid">
+                <div class="contact__info">
+                    <span class="section-label">06 — Get in Touch</span>
+                    <h2 class="section-title">Let's create <span class="accent">together</span></h2>
+                    <p class="contact__desc">Have a project in mind? Whether it's a short film, commercial, wedding
+                        video, or social media content, I'd love to hear about it. Let's bring your vision to life.</p>
+                    <div class="contact__details">
+                        <a href="mailto:awxfilm@gmail.com" class="contact__detail-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <rect x="2" y="4" width="20" height="16" rx="2" />
+                                <path d="M22 7l-10 7L2 7" />
+                            </svg>
+                            <span>awxfilm@gmail.com</span>
+                        </a>
+                        <a href="#" class="contact__detail-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span>Kelantan, Malaysia</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact__form" id="contactForm">
+                    <div class="contact__form-group">
+                        <label for="name" class="contact__form-label">Name</label>
+                        <input type="text" id="name" name="name" class="contact__form-input" placeholder="Your name"
+                            required>
+                    </div>
+                    <div class="contact__form-group">
+                        <label for="email" class="contact__form-label">Email</label>
+                        <input type="email" id="email" name="email" class="contact__form-input"
+                            placeholder="your@email.com" required>
+                    </div>
+                    <div class="contact__form-group">
+                        <label for="project" class="contact__form-label">Project Type</label>
+                        <select id="project" name="project" class="contact__form-input">
+                            <option value="">Select a project type</option>
+                            <option value="short-film">Short Film</option>
+                            <option value="documentary">Documentary</option>
+                            <option value="commercial">Commercial</option>
+                            <option value="wedding">Wedding</option>
+                            <option value="music-video">Music Video</option>
+                            <option value="social-media">Social Media Content</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="contact__form-group">
+                        <label for="message" class="contact__form-label">Message</label>
+                        <textarea id="message" name="message" class="contact__form-input contact__form-textarea"
+                            placeholder="Tell me about your project..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full">
+                        <span>Send Message</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13" />
+                            <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <a href="#hero" class="nav__logo">
+                        <img src="assets/images/logo-full.png" alt="AWX Logo" class="nav__logo-img">
+                        <span class="nav__logo-tag">VISUAL</span>
+                    </a>
+                    <p class="footer__tagline">Crafting cinematic stories, one frame at a time.</p>
+                </div>
+                <div class="footer__links">
+                    <a href="https://vt.tiktok.com/ZSAogELba/" target="_blank" rel="noopener"
+                        class="footer__social-link" aria-label="TikTok">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V9.16a8.16 8.16 0 004.76 1.51V7.22a4.83 4.83 0 01-1-.53z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/awawo_48" target="_blank" rel="noopener"
+                        class="footer__social-link" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/@shizfaz1708" target="_blank" rel="noopener"
+                        class="footer__social-link" aria-label="YouTube">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 AWX Visual. All rights reserved.</p>
+            </div>
+        </div>
+        <!-- Video Modal Popup -->
+        <div class="video-modal" id="videoModal">
+            <div class="video-modal__backdrop" id="videoModalBackdrop"></div>
+            <div class="video-modal__container">
+                <button class="video-modal__close" id="videoModalClose" aria-label="Close Video">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
+                </button>
+                <div class="video-modal__iframe-wrapper">
+                    <iframe id="videoModalIframe" src="" title="Video Player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
