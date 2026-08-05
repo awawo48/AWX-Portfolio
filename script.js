@@ -199,47 +199,109 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ---- Contact Form Handler ----
+    // ---- Copy Email to Clipboard ----
+    const copyEmailBtn = document.getElementById('copyEmailBtn');
+    const copyTooltip = document.getElementById('copyTooltip');
+    if (copyEmailBtn && copyTooltip) {
+        copyEmailBtn.addEventListener('click', () => {
+            navigator.clipboard.writeText('awxfilm@gmail.com').then(() => {
+                copyTooltip.textContent = 'Copied!';
+                copyTooltip.classList.add('copy-email-tooltip--active');
+                setTimeout(() => {
+                    copyTooltip.textContent = 'Copy';
+                    copyTooltip.classList.remove('copy-email-tooltip--active');
+                }, 2000);
+            }).catch(() => {
+                copyTooltip.textContent = 'awxfilm@gmail.com';
+            });
+        });
+    }
+
+    // ---- Contact Form Professional Handler ----
     const contactForm = document.getElementById('contactForm');
+    const formStatus = document.getElementById('formStatus');
+    const submitBtn = document.getElementById('contactSubmitBtn');
+
     if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
+        contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
 
             const name = document.getElementById('name')?.value || '';
             const email = document.getElementById('email')?.value || '';
             const project = document.getElementById('project')?.value || 'General Inquiry';
             const message = document.getElementById('message')?.value || '';
+            const accessKey = document.getElementById('web3formsKey')?.value;
 
-            // Construct real mailto URL to awxfilm@gmail.com
-            const subject = encodeURIComponent(`[Portfolio Inquiry] ${project} - ${name}`);
-            const body = encodeURIComponent(
-                `Name: ${name}\n` +
-                `Email: ${email}\n` +
-                `Project Type: ${project}\n\n` +
-                `Message:\n${message}`
-            );
+            // UI Loading State
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.style.opacity = '0.7';
+                submitBtn.innerHTML = `<span>Sending Message...</span> <span class="spinner"></span>`;
+            }
+            if (formStatus) {
+                formStatus.style.display = 'none';
+                formStatus.className = 'form-status';
+            }
 
-            const mailtoUrl = `mailto:awxfilm@gmail.com?subject=${subject}&body=${body}`;
+            // Check if Web3Forms Key is provided
+            if (accessKey && accessKey !== 'YOUR_ACCESS_KEY_HERE') {
+                try {
+                    const formData = new FormData(contactForm);
+                    const response = await fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        body: formData
+                    });
+                    const result = await response.json();
 
-            // Trigger real email client
-            window.location.href = mailtoUrl;
-
-            const submitBtn = contactForm.querySelector('button[type="submit"]');
-            const originalText = submitBtn.innerHTML;
-
-            submitBtn.innerHTML = `
-                <span>Opening Email App... ✓</span>
-            `;
-            submitBtn.style.background = '#ffffff';
-            submitBtn.style.color = '#000000';
-
-            setTimeout(() => {
-                submitBtn.innerHTML = originalText;
-                submitBtn.style.background = '';
-                submitBtn.style.color = '';
+                    if (result.success) {
+                        if (formStatus) {
+                            formStatus.textContent = 'Thank you! Your message has been sent successfully. I will get back to you soon.';
+                            formStatus.className = 'form-status form-status--success';
+                            formStatus.style.display = 'block';
+                        }
+                        contactForm.reset();
+                    } else {
+                        throw new Error(result.message || 'Submission failed');
+                    }
+                } catch (error) {
+                    if (formStatus) {
+                        formStatus.textContent = 'Unable to send directly. Opening your email app instead...';
+                        formStatus.className = 'form-status form-status--warning';
+                        formStatus.style.display = 'block';
+                    }
+                    triggerMailto(name, email, project, message);
+                }
+            } else {
+                // Direct Mailto fallback with prefilled content
+                triggerMailto(name, email, project, message);
+                if (formStatus) {
+                    formStatus.textContent = 'Opening your default email app to send message to awxfilm@gmail.com...';
+                    formStatus.className = 'form-status form-status--info';
+                    formStatus.style.display = 'block';
+                }
                 contactForm.reset();
+            }
+
+            // Restore Submit Button
+            setTimeout(() => {
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.style.opacity = '1';
+                    submitBtn.innerHTML = `<span>Send Message</span> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13" /><polygon points="22 2 15 22 11 13 2 9 22 2" /></svg>`;
+                }
             }, 3000);
         });
+    }
+
+    function triggerMailto(name, email, project, message) {
+        const subject = encodeURIComponent(`[Portfolio Inquiry] ${project} - ${name}`);
+        const body = encodeURIComponent(
+            `Name: ${name}\n` +
+            `Email: ${email}\n` +
+            `Project Type: ${project}\n\n` +
+            `Message:\n${message}`
+        );
+        window.location.href = `mailto:awxfilm@gmail.com?subject=${subject}&body=${body}`;
     }
 
     // ---- Hero Particles ----

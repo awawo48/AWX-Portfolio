@@ -524,25 +524,39 @@
                     <p class="contact__desc">Have a project in mind? Whether it's a short film, commercial, wedding
                         video, or social media content, I'd love to hear about it. Let's bring your vision to life.</p>
                     <div class="contact__details">
-                        <a href="mailto:awxfilm@gmail.com" class="contact__detail-item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="1.5">
-                                <rect x="2" y="4" width="20" height="16" rx="2" />
-                                <path d="M22 7l-10 7L2 7" />
-                            </svg>
-                            <span>awxfilm@gmail.com</span>
-                        </a>
-                        <a href="#" class="contact__detail-item">
+                        <div class="contact__detail-item-wrapper">
+                            <a href="mailto:awxfilm@gmail.com" class="contact__detail-item" id="emailLink">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                                    <path d="M22 7l-10 7L2 7" />
+                                </svg>
+                                <span>awxfilm@gmail.com</span>
+                            </a>
+                            <button type="button" class="copy-email-btn" id="copyEmailBtn" title="Copy email address">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                </svg>
+                                <span class="copy-email-tooltip" id="copyTooltip">Copy</span>
+                            </button>
+                        </div>
+                        <div class="contact__detail-item">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="1.5">
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
                                 <circle cx="12" cy="10" r="3" />
                             </svg>
                             <span>Kelantan, Malaysia</span>
-                        </a>
+                        </div>
                     </div>
                 </div>
-                <form class="contact__form" id="contactForm">
+                <form class="contact__form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                    <!-- Web3Forms Access Key or Direct Web3Forms submission -->
+                    <input type="hidden" name="access_key" id="web3formsKey" value="YOUR_ACCESS_KEY_HERE">
+                    <input type="hidden" name="subject" value="New Portfolio Inquiry from AWX Visual">
+                    <input type="hidden" name="from_name" value="AWX Visual Portfolio">
+
                     <div class="contact__form-group">
                         <label for="name" class="contact__form-label">Name</label>
                         <input type="text" id="name" name="name" class="contact__form-input" placeholder="Your name"
@@ -571,14 +585,16 @@
                         <textarea id="message" name="message" class="contact__form-input contact__form-textarea"
                             placeholder="Tell me about your project..." rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn--primary btn--full">
-                        <span>Send Message</span>
+                    <button type="submit" class="btn btn--primary btn--full" id="contactSubmitBtn">
+                        <span class="btn-text">Send Message</span>
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
+                            stroke-width="2" class="btn-icon">
                             <line x1="22" y1="2" x2="11" y2="13" />
                             <polygon points="22 2 15 22 11 13 2 9 22 2" />
                         </svg>
                     </button>
+                    <div class="form-status" id="formStatus" style="display: none;"></div>
+                </form>
                 </form>
             </div>
         </div>
