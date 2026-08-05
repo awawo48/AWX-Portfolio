@@ -1709,39 +1709,48 @@ select.contact__form-input {
 .work-tabs {
     display: flex;
     justify-content: center;
-    gap: 0.75rem;
-    margin: 2rem 0 3rem;
+    gap: 1rem;
+    margin: 2rem 0 3.5rem;
 }
 
 .work-tab {
     font-family: var(--font-tech);
     font-size: 0.85rem;
     font-weight: 700;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
-    padding: 0.6rem 1.4rem;
+    padding: 0.7rem 1.6rem;
     border-radius: var(--radius-full);
     background: var(--bg-card);
-    border: 1px solid var(--border-color);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     color: var(--text-secondary);
     cursor: pointer;
-    transition: all var(--transition-fast);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .work-tab:hover {
-    color: var(--text-primary);
-    border-color: var(--border-hover);
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.12);
+    border-color: var(--color-accent);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4), 0 0 15px rgba(255, 255, 255, 0.15);
 }
 
 .work-tab--active {
     background: var(--color-accent);
     color: #000000;
     border-color: var(--color-accent);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.25);
+    font-weight: 800;
 }
 
 .work-tab--active:hover {
-    background: var(--color-accent-light, var(--color-accent));
+    background: #ffffff;
     color: #000000;
+    border-color: #ffffff;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.4);
 }
 
 .work-grid {
